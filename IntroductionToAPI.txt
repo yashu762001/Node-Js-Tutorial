@@ -1,0 +1,48 @@
+		
+
+Introduction To API
+
+So everyone who is related to the software industry must have heard the term API once in his lifetime.
+
+If you go and google the definition of API you will get a developer friendly definition, but not a beginner friendly definition.
+
+What is API ??
+
+Let's discuss the functioning of restaurants and weather forecasting apps and flightbooking apps in detail before actually learning
+what API is .
+
+1. When we go to restaurant all our communication regarding food, payments ,or any other talk takes place with the waiter. Actually
+the waiter is the intermediate between the restaurant's kitchen and the management facility. For ordering food we don't need to go to
+kitchen and ask what is avilable and what is not. The waiter will tell us everything about the menu and whatever instructions we want
+to give to the kitchen are given via the waiter. So we don't need to do anything rather than talking to the waiter. 
+
+2. We have weather forecasting apps within our mobile. How are they working. Some people say that they have sent satellites with 
+temperature sensors installed on them, and via the satellites we receive information. But we have millions of weather forecasting apps
+so is everyone sending their own satellites or only the meteorological department has send the satellite and rest everyone is just using
+the data they are providing. Yaa This is the actual way of working of these apps. They are receiving data from the ones who are ready to
+provide data.
+
+3. Whenever we book a flight ticket through a 3rd party app which is not actually an airline like Goibibo. How are they able to tell in which
+airlines seats are available. Actually they have collaborated with the airlines and the airlines have given them the permission to use their
+database for your apps working.
+
+So from all the above examples it is very clear that we are just using someone's work for our apps working.
+
+API which stands for Application Programming Interface is the prewritten code by some authority and which is used by some other
+organisation just for their benifit, and so that they will not be forced to create that particular functionality.
+
+API allows us to use the database of that organisation and send GET request to their database as well as to reflect changes in them we can
+also send the POST requests to them.
+
+These API connects lot of things together. Sometimes we allow users to login with google so that we won't have the headache to maintain
+that persons data rather google will do that for me and whenever i will ask google for its data, it will give data. This functionality is
+achieved by using Google Login API.
+
+We can also create our own API so that some people could benifit with it. Also when we are working on a project , one person is working
+on frontend, someone on backend but independently. So how will frontend developer work in coordination with backend person. This is
+by making use of API's. The backend engineer will create an API which will be called by frontend engineer just to retreive data from it and
+display that data in whatsoever format he wants to.
+
+So In Todays Time Working With API's has become must.
+
+ 
