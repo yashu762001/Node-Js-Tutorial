@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>#{title}</title>
+    style
+        include ../static/style.css
+</head>
+<body>
+    <h1>this is a plain html using pug. </h1>
+
+    <a href = "/static/index.js"> Learn How To print In Java Script</a> 
+    <br>
+    <a href  = "/static/index1.js"> Learn How To Add Two Numbers In JavaScript</a>
+    
+    p #{content}
+    <div class="">
+        p Hello Folks
+    </div>
+
+    <form action = "/" method="POST">
+        <input type = "text" name = "name" id = "name" placeholder="Write Your Name"> <br>
+        <input type = "number" name = "age" id = "age" placeholder="Enter Your Age"> <br>
+        <input type = "number" name = "phone" id = "phone" placeholder="Enter Your Whatsapp Number"> <br>
+        <input type = "number" name = "weight" id = "weight" placeholder="Enter Your Weight"> <br>
+        <textarea name = "address" id=  "address" placeholder="Yor Residential Address"></textarea> <br>
+
+        <input type = "submit" id = "hello" placeholder="Submit">
+    </form>
+
+    
+
+</body>
+</html>

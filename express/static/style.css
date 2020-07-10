@@ -1,0 +1,71 @@
+* {
+    background-color: aquamarine;
+}
+
+h1 {
+    color : black; 
+    text-align: center;
+    font-weight: bold;
+    opacity: 1;
+}
+
+#name {
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 30px;
+    text-align : center; 
+    width: 80%;
+    
+}
+
+#weight {
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+}
+
+#age {
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+    
+}
+
+#phone {
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+    
+}
+
+#address {
+    margin: 8px;
+    border: 1px solid black;
+    border-radius: 40px;
+    font-size: 30px;
+    width: 80%;
+    text-align: center;
+    
+}
+
+#hello {
+    width : 60%;
+    font-size: 30px;
+    color: black;
+    font-weight: bold;
+    border: 2px solid black;
+    border-radius: 15px;
+    transform: translate(150px, 20px); 
+    cursor: pointer;
+}
+

@@ -1,0 +1,73 @@
+WORKING WITH CRUD OPERATIONS IN MONGO DB : 
+
+TOPIC 1 : Inserting Data Into Your DataBase
+
+use yash (yash data base is created and now we can use it)
+
+db.items.insertOne({'name':"Samsung Galaxy A30", 'price' :'Rs. 15999','rating' : '4.5', 'quantity': 435, 'sold': 213 })
+
+(We have created a table which we call here as collection. Items is a collection in which we have created a document which is named by the entries we have provided while creating the collection.)
+
+Above was to insert one document into the collection.
+
+But if we want to insert multiple documents into the collection, then we use InsertMany function.
+
+db.items.insertMany([{'name':"Samsung Galaxy A30", 'price' :'Rs. 15999','rating' : '4.5', 'quantity': 435, 'sold': 213 }, {'name':"Iphone 10", 'price' :'Rs. 82959','rating' : '4.5', 'quantity': 312, 'sold': 86 }, {'name':"Vivo Y15", 'price' :'Rs. 18999','rating' : '4.4', 'quantity': 567, 'sold': 487 }])
+
+There is no condition on fields to be included in a particular ovject. Like In other databases like SQL it was forced to keep
+fields of all objects same. But this iss not so in case of mongodb.
+
+To check which items have been added into my data base : The command is db.items.find()
+
+TOPIC 2 : Searching for data in your DataBase
+
+db.items.find({'name': 'XYZ'}) : This query will return all the objects with name XYZ.
+
+If we want to take objects with a property greater than or less than a particular value. In that case we can document
+that this way : 
+
+SUBTOPIC 1 : COMPARISON
+
+db.items.find({'price': {$gt: 12000}})
+if want items with price greater than 12000 use gt or if you want less tha then use lt.
+If you want greater than or equal to then use gte.
+
+SUBTOPIC 2 : OPERATORS
+
+And operator just use , like : 
+
+db.items.find({conition1}, {condition2}) : Here only those objects will be displayed which will satisfy both
+condition 1 and condition 2.
+
+Or operator
+
+db.items.find({$or: [{'price': {$lt:50000}}, {'sold': {$lt: 100}}]})
+Yeh Way of writing yaad rakhne ki koi zarurat nahi hai. Just Copy and paste.
+
+If i want to see just some fileds of object satisfying the condition provided, in that case what i want to see
+will be made 1 and this will imply that remaining are 0 or false so won't show them.
+
+Like : 
+db.items.find({rating: {$gt:3}}, {rating:0})
+
+TOPIC 3 : DELETING OBJECTS FROM THE DATABASE 
+
+To Delete One object satisfying a particular condition we write : 
+db.items.deleteOne({condition1})
+
+If there are multiple objects satisfying condition1 then the first object amongst them will be deleted.
+
+To delete all such objects which satisfy a particular condition the we use deleteMany.
+
+db.deleteMany({condition1})
+
+TOPIC 4 : UPDATING DATA IN THE DATABASE
+
+First Let's Discuss updateOne method : This will update just one entry satisfying the given condition with the
+new entry whichg we want.
+
+db.items.updateOne({'name': 'yash'}, {$set: {'age': 20}})
+
+Similarly if you want to update multiple objects satisfying a condittion, in that case use updateMany.
+
+.................By This the CRUD Operations in MongoDb Comes to An End .........................
